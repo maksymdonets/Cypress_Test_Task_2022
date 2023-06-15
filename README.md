@@ -1,2 +1,2 @@
-# Cypress_example
+# Cypress
 e2e
