@@ -5,4 +5,4 @@ e2e
 npm install
 
 # Running tests
-npx cypress run
+npm run test
