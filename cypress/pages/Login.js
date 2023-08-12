@@ -13,11 +13,11 @@ export default {
   loginSubtitle: () =>
     cy
       .get(".login-form__subtitle")
-      .should("contain.text", " Log in to your account "),
-  emailInput: () => cy.get('[name="email"]'),
-  passwordInput: () => cy.get('[name="password"]'),
+      .should("contain.text", "Log in to your account"),
+  emailInput: () => cy.get('input[type="email"]'),
+  passwordInput: () => cy.get('input[type="password"]'),
   errorMessage: () =>
     cy.get(".v-messages__message").contains("Wrong Email or password"),
   loginButton: () => Buttons.button("Log in"),
-  eyeButton: () => cy.get(".v-input__icon").find("button"),
+  eyeButton: () => cy.get('[aria-label="Password appended action"]'),
 };

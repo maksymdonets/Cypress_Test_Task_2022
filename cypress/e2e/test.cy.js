@@ -31,7 +31,7 @@ describe("Login form", () => {
     // Click on eye button
     Login.eyeButton().click();
     // Password appears
-    Login.passwordInput().should("contain.value", password);
+    cy.get('input[type="text"]').should("contain.value", password);
     // Click on login button
     Login.loginButton().click();
     // You successfully login
