@@ -1,6 +1,3 @@
-# Cypress
-e2e
-
 # Installation
 npm install
 
